@@ -36,7 +36,6 @@ cd ..
 
 
 ./src/sphere_tree -train ${dataset}/${text_file} -level-file ${dataset}/${level_file} -taxo-file ${dataset}/${taxo_file} \
-	-load-emb jose_100.txt \
 	-output ${dataset}/${out_file} -tree-emb ${dataset}/${tree_emb_file} -neg-file ${dataset}/${neg_file} \
 	-size ${word_dim} -window ${window_size} -sample 1e-3 -word-margin 0.25 -tree-margin 0.35 -tree-margin-sub 0.18 -cat-margin 0.9 \
 	-alpha 0.025 -tree-period 256 -global-lambda 1.5 -lambda-cat 1.0 -lambda-tree 1.0 -negative 2 \
